@@ -1,0 +1,20 @@
+<h1>Actors</h1>
+
+<table class="table table-striped" *ngIf="actors !== null">
+  <thead>
+  <tr>
+    <th class="label-table" scope="col">Id</th>
+    <th class="label-table" scope="col">Name</th>
+    <th class="label-table" scope="col">Level</th>
+    <th class="label-table" scope="col">Quality</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let actor of actors">
+    <th class="label-content-table" scope="row">{{actor.id}}</th>
+    <td class="label-content-table">{{actor.name}}</td>
+    <td class="label-content-table">{{actor.level}}</td>
+    <td class="label-content-table">{{actor.quality.name}}</td>
+  </tr>
+  </tbody>
+</table>
